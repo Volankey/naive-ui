@@ -1,9 +1,10 @@
 # CHANGELOG
 
 ## Pending
+
 ### Feats
 
-- `n-dynamic-tags` add `input` and `add` slot, closes [#499](https://github.com/TuSimple/naive-ui/issues/499).
+- `n-dynamic-tags` add `trigger` and `input` slot, closes [#499](https://github.com/TuSimple/naive-ui/issues/499).
 - `n-input-number` add `clearable` prop.
 
 ### Fixes

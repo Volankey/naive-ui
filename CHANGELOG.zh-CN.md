@@ -4,7 +4,7 @@
 
 ### Feats
 
-- `n-dynamic-tags` 新增 `input` 和 `add` 插槽，关闭 [#499](https://github.com/TuSimple/naive-ui/issues/499)
+- `n-dynamic-tags` 新增 `trigger` 和 `input` 插槽，关闭 [#499](https://github.com/TuSimple/naive-ui/issues/499)
 - `n-input-number` 新增 `clearable` 属性
 
 ### Fixes
