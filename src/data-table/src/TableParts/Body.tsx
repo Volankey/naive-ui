@@ -20,8 +20,7 @@ import {
   RowKey,
   SummaryRowData,
   MainTableBodyRef,
-  TmNode,
-  TableBaseColumn
+  TmNode
 } from '../interface'
 import { createRowClassName, getColKey, isColumnSorting } from '../utils'
 import Cell from './Cell'
@@ -420,12 +419,12 @@ export default defineComponent({
                 // virtual list should have a fast path
                 const { rowSpan, colSpan } = column
                 const mergedColSpan = isSummary
-                  ? (rowInfo.rawNode as SummaryRowData)[colKey].colSpan || 1
+                  ? (rowInfo.rawNode)[colKey].colSpan || 1
                   : colSpan
                     ? colSpan(rowData, rowIndex)
                     : 1
                 const mergedRowSpan = isSummary
-                  ? (rowInfo.rawNode as SummaryRowData)[colKey].rowSpan || 1
+                  ? (rowInfo.rawNode)[colKey].rowSpan || 1
                   : rowSpan
                     ? rowSpan(rowData, rowIndex)
                     : 1
@@ -471,10 +470,7 @@ export default defineComponent({
                       isSummary && `${mergedClsPrefix}-data-table-td--summary`,
                       ((hoverKey !== null &&
                         cordKey[rowIndex][colIndex].includes(hoverKey)) ||
-                        isColumnSorting(
-                          column as TableBaseColumn,
-                          mergedSortState
-                        )) &&
+                        isColumnSorting(column, mergedSortState)) &&
                         `${mergedClsPrefix}-data-table-td--hover`,
                       column.fixed &&
                         `${mergedClsPrefix}-data-table-td--fixed-${column.fixed}`,
@@ -499,13 +495,13 @@ export default defineComponent({
                     {hasChildren && colIndex === firstContentfulColIndex
                       ? [
                           repeat(
-                            isSummary ? 0 : (rowInfo as TmNode).level,
+                            isSummary ? 0 : (rowInfo).level,
                             <div
                               class={`${mergedClsPrefix}-data-table-indent`}
                               style={indentStyle}
                             />
                           ),
-                          isSummary || !(rowInfo as TmNode).children ? (
+                          isSummary || !(rowInfo).children ? (
                             <div
                               class={`${mergedClsPrefix}-data-table-expand-placeholder`}
                             />
@@ -591,7 +587,7 @@ export default defineComponent({
                       ]}
                       colspan={colCount}
                     >
-                      {renderExpand!(rowData, rowIndex)}
+                      {renderExpand(rowData, rowIndex)}
                     </td>
                   </tr>
                 )
