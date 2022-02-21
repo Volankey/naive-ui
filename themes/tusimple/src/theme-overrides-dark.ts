@@ -104,7 +104,8 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     fontSize: '16px',
     fontWeightActive: '500',
     itemTextColorPressed: colors.primaryColor,
-    itemTextColor: '#ADADAD'
+    itemTextColor: '#ADADAD',
+    itemTextColorActive: '#FFF'
   },
   Button: {
     fontWeightStrong: commonDark.fontWeightStrong,
@@ -443,8 +444,7 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     space: '4px',
     spaceArrow: '14px',
     textColor: '#FFF',
-    boxShadow: vars.NORMAL_BOX_SHADOW_DARK_THEME,
-    padding: '12px 20px'
+    boxShadow: vars.NORMAL_BOX_SHADOW_DARK_THEME
   },
   Popconfirm: {
     iconColor: '#FAB23E !important'
