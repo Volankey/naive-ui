@@ -71,9 +71,18 @@ export const unconfigurableStyle = c([
       )
     ])
   ]),
-  cB('cascader-menu', {
-    padding: '4px 0'
-  }),
+  cB(
+    'cascader-menu',
+    {
+      padding: '4px 0'
+    },
+    [
+      cB('cascader-submenu', {
+        padding: '4px 0',
+        margin: '-4px 0'
+      })
+    ]
+  ),
   cB('dropdown-menu', {
     overflow: 'hidden'
   }),
@@ -318,6 +327,11 @@ export const unconfigurableStyle = c([
         backgroundColor: changeColor('#D7DAE0', { alpha: 0.25 })
       })
     ])
+  ]),
+  cB('popover', [
+    c('span', {
+      // padding: '12px 20px'
+    })
   ]),
   cB('progress', [
     cB('progress-graph', [
