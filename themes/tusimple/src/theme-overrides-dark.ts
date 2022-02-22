@@ -499,7 +499,7 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     indicatorTextColorProcess: '#333'
   },
   Radio: {
-    labelPadding: '0 8px 0 12px',
+    labelPadding: '0 8px',
     fontSizeMedium: '16px',
     radioSizeMedium: '16px',
     dotColorDisabled: '#5B5B5B',
