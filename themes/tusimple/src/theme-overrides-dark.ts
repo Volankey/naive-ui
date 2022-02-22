@@ -485,8 +485,8 @@ export const themeOverridesDark: GlobalThemeOverrides = {
   Slider: {
     railColor: '#5B5B5B',
     fillColor: colors.primaryColor,
-    fillColorHover: colors.primaryColorHover,
     railColorHover: '#5B5B5B',
+    fillColorHover: '#4FB233',
     handleBoxShadow: vars.NORMAL_BOX_SHADOW_DARK_THEME,
     handleBoxShadowHover: vars.NORMAL_BOX_SHADOW_DARK_THEME,
     handleBoxShadowActive: vars.NORMAL_BOX_SHADOW_DARK_THEME,
