@@ -51,6 +51,13 @@ export const themeOverridesLight: GlobalThemeOverrides = {
     clearColor: composite('#FFF', 'rgba(0, 0, 0, .4)'),
     ...colors
   },
+  AutoComplete: {
+    peers: {
+      InternalSelectMenu: {
+        paddingMedium: '4px 0'
+      }
+    }
+  },
   Avatar: {
     borderRadius: '50%'
   },
@@ -357,7 +364,15 @@ export const themeOverridesLight: GlobalThemeOverrides = {
     arrowOffsetVertical: '16px',
     arrowHeight: '8px',
     space: '4px',
-    spaceArrow: '14px'
+    spaceArrow: '14px',
+    padding: '12px 20px'
+  },
+  Popselect: {
+    peers: {
+      Popover: {
+        padding: '0'
+      }
+    }
   },
   Progress: {
     fontWeightCircle: '700',

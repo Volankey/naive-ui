@@ -78,6 +78,13 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     boxShadow2: vars.NORMAL_BOX_SHADOW_DARK_THEME,
     ...colors
   },
+  AutoComplete: {
+    peers: {
+      InternalSelectMenu: {
+        paddingMedium: '4px 0'
+      }
+    }
+  },
   Avatar: {
     borderRadius: '50%'
   },
@@ -447,7 +454,15 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     space: '4px',
     spaceArrow: '14px',
     textColor: '#FFF',
-    boxShadow: vars.NORMAL_BOX_SHADOW_DARK_THEME
+    boxShadow: vars.NORMAL_BOX_SHADOW_DARK_THEME,
+    padding: '12px 20px'
+  },
+  Popselect: {
+    peers: {
+      Popover: {
+        padding: '0'
+      }
+    }
   },
   Popconfirm: {
     iconColor: '#FAB23E !important'
