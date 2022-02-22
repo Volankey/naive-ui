@@ -357,8 +357,7 @@ export const themeOverridesLight: GlobalThemeOverrides = {
     arrowOffsetVertical: '16px',
     arrowHeight: '8px',
     space: '4px',
-    spaceArrow: '14px',
-    padding: '12px 20px'
+    spaceArrow: '14px'
   },
   Progress: {
     fontWeightCircle: '700',
@@ -381,7 +380,8 @@ export const themeOverridesLight: GlobalThemeOverrides = {
   Radio: {
     dotColorDisabled: '#D7DAE0',
     buttonColorActive: '#4FB233',
-    buttonTextColorActive: '#FFF'
+    buttonTextColorActive: '#FFF',
+    buttonBoxShadowHover: 'inset 0 0 0 1px #4FB233'
   },
   Switch: {
     railHeightMedium: '15px',
