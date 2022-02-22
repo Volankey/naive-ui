@@ -305,7 +305,7 @@ export const unconfigurableStyle = c([
             cB('transfer-list-item', [
               cB('transfer-list-item__checkbox', {
                 paddingLeft: '12px',
-                paddingRight: '13px'
+                paddingRight: '8px'
               })
             ])
           ])
