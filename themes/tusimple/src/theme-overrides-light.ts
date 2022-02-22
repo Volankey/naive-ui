@@ -163,8 +163,8 @@ export const themeOverridesLight: GlobalThemeOverrides = {
     sizeMedium: '16px',
     fontSizeMedium: '16px',
     borderRadius: '4px',
-    borderDisabled: `1px solid ${colors.textColorDisabled}`,
-    borderDisabledChecked: '1px solid #0000',
+    borderDisabled: '1px solid #EBEDF0',
+    borderDisabledChecked: '1px solid #EBEDF0',
     checkMarkColorDisabled: colors.textColorDisabled,
     checkMarkColorDisabledChecked: '#FFF',
     colorDisabled: '#0000',
@@ -408,7 +408,8 @@ export const themeOverridesLight: GlobalThemeOverrides = {
     dotColorDisabled: '#D7DAE0',
     buttonColorActive: '#4FB233',
     buttonTextColorActive: '#FFF',
-    buttonBoxShadowHover: 'inset 0 0 0 1px #4FB233'
+    buttonBoxShadowHover: 'inset 0 0 0 1px #4FB233',
+    boxShadowDisabled: 'inset 0 0 0 1px #D7DAE0'
   },
   Switch: {
     railHeightMedium: '15px',

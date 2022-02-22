@@ -198,7 +198,8 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     sizeMedium: '16px',
     fontSizeMedium: '16px',
     borderRadius: '4px',
-    borderDisabled: '1px solid #5B5B5B',
+    border: '1px solid #ADADAD',
+    borderDisabled: '1px solid #333',
     colorDisabled: '#0000',
     colorDisabledChecked: '#D8D8D8',
     textColor: '#FFFFFF'
@@ -502,6 +503,7 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     fontSizeMedium: '16px',
     radioSizeMedium: '16px',
     dotColorDisabled: '#5B5B5B',
+    boxShadow: 'inset 0 0 0 1px #ADADAD',
     boxShadowDisabled: 'inset 0 0 0 1px #5B5B5B',
     textColor: '#FFFFFF',
     buttonTextColorActive: '#333'
