@@ -328,11 +328,6 @@ export const unconfigurableStyle = c([
       })
     ])
   ]),
-  cB('popover', [
-    c('span', {
-      // padding: '12px 20px'
-    })
-  ]),
   cB('progress', [
     cB('progress-graph', [
       cB('progress-graph-line', [

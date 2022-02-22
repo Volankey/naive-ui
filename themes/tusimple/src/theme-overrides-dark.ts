@@ -508,6 +508,13 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     textColor: '#FFFFFF',
     buttonTextColorActive: '#333'
   },
+  Select: {
+    peers: {
+      InternalSelectMenu: {
+        paddingMedium: '4px 0'
+      }
+    }
+  },
   Slider: {
     railColor: '#5B5B5B',
     fillColor: colors.primaryColor,

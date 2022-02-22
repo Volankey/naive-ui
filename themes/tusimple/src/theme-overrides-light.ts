@@ -399,6 +399,13 @@ export const themeOverridesLight: GlobalThemeOverrides = {
     buttonBoxShadowHover: 'inset 0 0 0 1px #4FB233',
     boxShadowDisabled: 'inset 0 0 0 1px #D7DAE0'
   },
+  Select: {
+    peers: {
+      InternalSelectMenu: {
+        paddingMedium: '4px 0'
+      }
+    }
+  },
   Switch: {
     railHeightMedium: '15px',
     railHeightLarge: '20px',
