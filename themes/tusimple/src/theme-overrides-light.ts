@@ -18,16 +18,16 @@ export const colors = {
   primaryColor: '#4FB233',
   primaryColorHover: createHoverColor('#4FB233'),
   primaryColorPressed: createPressedColor('#4FB233'),
-  infoColor: '#335FFF',
+  infoColor: '#4B70FA',
   infoColorHover: createHoverColor('#335FFF'),
   infoColorPressed: createPressedColor('#335FFF'),
   successColor: '#4FB233',
   successColorHover: createHoverColor('#4FB233'),
   successColorPressed: createPressedColor('#4FB233'),
-  errorColor: '#D92149',
+  errorColor: '#EB3B61',
   errorColorHover: createHoverColor('#D92149'),
   errorColorPressed: createPressedColor('#D92149'),
-  warningColor: '#FFAC26',
+  warningColor: '#FAB23E',
   warningColorHover: createHoverColor('#FFAC26', 0.2),
   warningColorPressed: createPressedColor('#FFAC26', 0.05),
   textColorDisabled: '#D7DAE0',
@@ -50,6 +50,12 @@ export const themeOverridesLight: GlobalThemeOverrides = {
     hoverColor: changeColor(colors.primaryColor, { alpha: 0.1 }),
     clearColor: composite('#FFF', 'rgba(0, 0, 0, .4)'),
     ...colors
+  },
+  Alert: {
+    iconColorInfo: colors.infoColor,
+    iconColorSuccess: colors.successColor,
+    iconColorWarning: colors.warningColor,
+    iconColorError: colors.errorColor
   },
   AutoComplete: {
     peers: {
@@ -75,6 +81,12 @@ export const themeOverridesLight: GlobalThemeOverrides = {
       '0 40px 16px -24px rgba(0,0,0,0.04), 0 8px 16px -8px rgba(0,0,0,0.12), 0 16px 40px 16px rgba(0,0,0,0.04)',
     boxShadowPressed:
       '0 40px 16px -24px rgba(0,0,0,0.04), 0 8px 16px -8px rgba(0,0,0,0.12), 0 16px 40px 16px rgba(0,0,0,0.04)'
+  },
+  Badge: {
+    color: colors.errorColor,
+    colorInfo: colors.infoColor,
+    colorSuccess: colors.successColor,
+    colorError: colors.errorColor
   },
   Breadcrumb: {
     fontSize: '16px',
