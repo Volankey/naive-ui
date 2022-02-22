@@ -78,12 +78,6 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     boxShadow2: vars.NORMAL_BOX_SHADOW_DARK_THEME,
     ...colors
   },
-  Alert: {
-    iconColorInfo: colors.infoColor,
-    iconColorSuccess: colors.successColor,
-    iconColorWarning: colors.warningColor,
-    iconColorError: colors.errorColor
-  },
   AutoComplete: {
     peers: {
       InternalSelectMenu: {
@@ -95,10 +89,7 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     borderRadius: '50%'
   },
   Badge: {
-    color: colors.errorColor,
-    colorInfo: colors.infoColor,
-    colorSuccess: colors.successColor,
-    colorError: colors.errorColor
+    color: '#EB3B61'
   },
   BackTop: {
     width: '48px',
