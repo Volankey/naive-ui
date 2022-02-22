@@ -637,8 +637,8 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     headerBarColor: '#ADADAD'
   },
   Upload: {
-    itemColorHover: 'rgba(255, 255, 255, 0.09)',
-    itemColorHoverError: 'rgba(232, 128, 128, 0.09)',
+    itemColorHover: 'rgba(79, 178, 51, .1)',
+    itemColorHoverError: 'rgba(235, 59, 97, .1)',
     itemIconColor: '#FFFFFF',
     fontSize: '16px'
   }
