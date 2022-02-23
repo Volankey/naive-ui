@@ -82,7 +82,11 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     iconColorInfo: colors.infoColor,
     iconColorSuccess: colors.successColor,
     iconColorWarning: colors.warningColor,
-    iconColorError: colors.errorColor
+    iconColorError: colors.errorColor,
+    colorInfo: 'rgba(75, 112, 250, .25)',
+    colorSuccess: 'rgba(79, 178, 51, .25)',
+    colorWarning: 'rgba(250, 178, 62, .25)',
+    colorError: 'rgba(235, 59, 97, .25)'
   },
   AutoComplete: {
     peers: {
@@ -194,14 +198,15 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     iconMarginLarge: '12px'
   },
   Checkbox: {
-    labelPadding: '0 8px 0 12px',
+    labelPadding: '0 8px',
     sizeMedium: '16px',
     fontSizeMedium: '16px',
     borderRadius: '4px',
     border: '1px solid #ADADAD',
-    borderDisabled: '1px solid #333',
-    colorDisabled: '#0000',
-    colorDisabledChecked: '#D8D8D8',
+    colorDisabled: '#333',
+    borderDisabled: '1px solid #5B5B5B',
+    colorDisabledChecked: '#5B5B5B',
+    checkMarkColorDisabledChecked: '#141414',
     textColor: '#FFFFFF'
   },
   Card: {
