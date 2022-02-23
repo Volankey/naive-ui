@@ -83,10 +83,10 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     iconColorSuccess: colors.successColor,
     iconColorWarning: colors.warningColor,
     iconColorError: colors.errorColor,
-    colorInfo: 'rgba(75, 112, 250, .25)',
-    colorSuccess: 'rgba(79, 178, 51, .25)',
-    colorWarning: 'rgba(250, 178, 62, .25)',
-    colorError: 'rgba(235, 59, 97, .25)'
+    colorInfo: 'rgba(75, 112, 250, .15)',
+    colorSuccess: 'rgba(79, 178, 51, .15)',
+    colorWarning: 'rgba(250, 178, 62, .15)',
+    colorError: 'rgba(235, 59, 97, .15)'
   },
   AutoComplete: {
     peers: {
