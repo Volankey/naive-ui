@@ -2,7 +2,10 @@ import { changeColor } from 'seemly'
 import { c, cB, cE, cM, cNotM } from 'naive-ui'
 
 export function mountSvgDefs (): void {
-  if (document.getElementById('naive-ui/tusimple/svg-defs')) return
+  const oldSvgEl = document.getElementById('naive-ui/tusimple/svg-defs')
+  if (oldSvgEl) {
+    document.body.removeChild(oldSvgEl)
+  }
   const svgDefs = `<defs>
     <linearGradient id="progress-info">
       <stop offset="0%" stop-color="#80c6ff" />
@@ -13,12 +16,12 @@ export function mountSvgDefs (): void {
       <stop offset="100%" stop-color="#4FB233" />
     </linearGradient>
     <linearGradient id="progress-warning">
-      <stop offset="0%" stop-color="#F2E93D" />
-      <stop offset="100%" stop-color="#FFAC26" />
+      <stop offset="0%" stop-color="#F2EA55" />
+      <stop offset="100%" stop-color="#FAB23E" />
     </linearGradient>
     <linearGradient id="progress-error">
-      <stop offset="0%" stop-color="#FF66BA" />
-      <stop offset="100%" stop-color="#D92149" />
+      <stop offset="0%" stop-color="#FF73C0" />
+      <stop offset="100%" stop-color="#EB3B61" />
     </linearGradient>
   </defs>`
   const svgEl = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
@@ -78,9 +81,18 @@ export const unconfigurableStyle = c([
       })
     ])
   ]),
-  cB('cascader-menu', {
-    padding: '4px 0'
-  }),
+  cB(
+    'cascader-menu',
+    {
+      padding: '4px 0'
+    },
+    [
+      cB('cascader-submenu', {
+        padding: '4px 0',
+        margin: '-4px 0'
+      })
+    ]
+  ),
   cB('dropdown-menu', {
     overflow: 'hidden'
   }),
@@ -291,7 +303,7 @@ export const unconfigurableStyle = c([
       cB('transfer-list-header', [
         cB('transfer-list-header__checkbox', {
           paddingLeft: '12px',
-          paddingRight: '13px'
+          paddingRight: '8px'
         }),
         cB('transfer-list-header__extra', {
           marginRight: '12px'
@@ -303,7 +315,7 @@ export const unconfigurableStyle = c([
             cB('transfer-list-item', [
               cB('transfer-list-item__checkbox', {
                 paddingLeft: '12px',
-                paddingRight: '13px'
+                paddingRight: '8px'
               })
             ])
           ])
@@ -331,7 +343,7 @@ export const unconfigurableStyle = c([
       cB('progress-graph-line', [
         cB('progress-graph-line-rail', [
           cB('progress-graph-line-fill', {
-            background: 'linear-gradient(270deg, #F2E93D 0%, #FFAC26 100%)'
+            background: 'linear-gradient(270deg, #F2EA55 0%, #FAB23E 100%)'
           })
         ])
       ]),
@@ -345,7 +357,7 @@ export const unconfigurableStyle = c([
       cB('progress-graph-line', [
         cB('progress-graph-line-rail', [
           cB('progress-graph-line-fill', {
-            background: 'linear-gradient(270deg, #F2E93D 0%, #FFAC26 100%)'
+            background: 'linear-gradient(270deg, #F2EA55 0%, #FAB23E 100%)'
           })
         ])
       ]),
@@ -373,7 +385,7 @@ export const unconfigurableStyle = c([
       cB('progress-graph-line', [
         cB('progress-graph-line-rail', [
           cB('progress-graph-line-fill', {
-            background: 'linear-gradient(270deg, #FF66BA 0%, #D92149 100%)'
+            background: 'linear-gradient(270deg, #FF73C0 0%, #EB3B61 100%)'
           })
         ])
       ]),
@@ -387,7 +399,7 @@ export const unconfigurableStyle = c([
       cB('progress-graph-line', [
         cB('progress-graph-line-rail', [
           cB('progress-graph-line-fill', {
-            background: 'linear-gradient(270deg, #FF66BA 0%, #D92149 100%)'
+            background: 'linear-gradient(270deg, #FF73C0 0%, #EB3B61 100%)'
           })
         ])
       ]),

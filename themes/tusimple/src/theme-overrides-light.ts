@@ -51,6 +51,13 @@ export const themeOverridesLight: GlobalThemeOverrides = {
     clearColor: composite('#FFF', 'rgba(0, 0, 0, .4)'),
     ...colors
   },
+  AutoComplete: {
+    peers: {
+      InternalSelectMenu: {
+        paddingMedium: '4px 0'
+      }
+    }
+  },
   Avatar: {
     borderRadius: '50%'
   },
@@ -144,12 +151,12 @@ export const themeOverridesLight: GlobalThemeOverrides = {
     sizeMedium: '16px',
     fontSizeMedium: '16px',
     borderRadius: '4px',
-    borderDisabled: `1px solid ${colors.textColorDisabled}`,
-    borderDisabledChecked: '1px solid #0000',
+    borderDisabled: '1px solid #D7DAE0',
+    borderDisabledChecked: '1px solid #D7DAE0',
     checkMarkColorDisabled: colors.textColorDisabled,
     checkMarkColorDisabledChecked: '#FFF',
-    colorDisabled: '#0000',
-    colorDisabledChecked: '#F5F6F7 ',
+    colorDisabled: '#EBEDF0',
+    colorDisabledChecked: '#D7DAE0 ',
     textColor: colors.textColor1,
     textColorDisabled: colors.textColorDisabled
   },
@@ -360,6 +367,13 @@ export const themeOverridesLight: GlobalThemeOverrides = {
     spaceArrow: '14px',
     padding: '12px 20px'
   },
+  Popselect: {
+    peers: {
+      Popover: {
+        padding: '0'
+      }
+    }
+  },
   Progress: {
     fontWeightCircle: '700',
     railHeight: '4px',
@@ -381,7 +395,16 @@ export const themeOverridesLight: GlobalThemeOverrides = {
   Radio: {
     dotColorDisabled: '#D7DAE0',
     buttonColorActive: '#4FB233',
-    buttonTextColorActive: '#FFF'
+    buttonTextColorActive: '#FFF',
+    buttonBoxShadowHover: 'inset 0 0 0 1px #4FB233',
+    boxShadowDisabled: 'inset 0 0 0 1px #D7DAE0'
+  },
+  Select: {
+    peers: {
+      InternalSelectMenu: {
+        paddingMedium: '4px 0'
+      }
+    }
   },
   Switch: {
     railHeightMedium: '15px',

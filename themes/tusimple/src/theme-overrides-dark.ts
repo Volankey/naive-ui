@@ -78,11 +78,31 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     boxShadow2: vars.NORMAL_BOX_SHADOW_DARK_THEME,
     ...colors
   },
+  Alert: {
+    iconColorInfo: colors.infoColor,
+    iconColorSuccess: colors.successColor,
+    iconColorWarning: colors.warningColor,
+    iconColorError: colors.errorColor,
+    colorInfo: 'rgba(75, 112, 250, .15)',
+    colorSuccess: 'rgba(79, 178, 51, .15)',
+    colorWarning: 'rgba(250, 178, 62, .15)',
+    colorError: 'rgba(235, 59, 97, .15)'
+  },
+  AutoComplete: {
+    peers: {
+      InternalSelectMenu: {
+        paddingMedium: '4px 0'
+      }
+    }
+  },
   Avatar: {
     borderRadius: '50%'
   },
   Badge: {
-    color: '#EB3B61'
+    color: colors.errorColor,
+    colorInfo: colors.infoColor,
+    colorSuccess: colors.successColor,
+    colorError: colors.errorColor
   },
   BackTop: {
     width: '48px',
@@ -104,7 +124,8 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     fontSize: '16px',
     fontWeightActive: '500',
     itemTextColorPressed: colors.primaryColor,
-    itemTextColor: '#ADADAD'
+    itemTextColor: '#ADADAD',
+    itemTextColorActive: '#FFF'
   },
   Button: {
     fontWeightStrong: commonDark.fontWeightStrong,
@@ -150,6 +171,9 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     borderDisabledSuccess: '1px solid #333',
     borderDisabledWarning: '1px solid #333',
     borderDisabledError: '1px solid #333',
+    textColorFocusPrimary: '#333',
+    textColorFocusWarning: '#333',
+    textColorFocusSuccess: '#333',
     textColorGhost: '#FFFFFF',
     textColorDisabled: '#5B5B5B',
     textColorDisabledPrimary: '#5B5B5B',
@@ -174,13 +198,15 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     iconMarginLarge: '12px'
   },
   Checkbox: {
-    labelPadding: '0 8px 0 12px',
+    labelPadding: '0 8px',
     sizeMedium: '16px',
     fontSizeMedium: '16px',
     borderRadius: '4px',
+    border: '1px solid #ADADAD',
+    colorDisabled: '#333',
     borderDisabled: '1px solid #5B5B5B',
-    colorDisabled: '#0000',
-    colorDisabledChecked: '#D8D8D8',
+    colorDisabledChecked: '#5B5B5B',
+    checkMarkColorDisabledChecked: '#141414',
     textColor: '#FFFFFF'
   },
   Card: {
@@ -446,6 +472,13 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     boxShadow: vars.NORMAL_BOX_SHADOW_DARK_THEME,
     padding: '12px 20px'
   },
+  Popselect: {
+    peers: {
+      Popover: {
+        padding: '0'
+      }
+    }
+  },
   Popconfirm: {
     iconColor: '#FAB23E !important'
   },
@@ -471,19 +504,27 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     indicatorTextColorProcess: '#333'
   },
   Radio: {
-    labelPadding: '0 8px 0 12px',
+    labelPadding: '0 8px',
     fontSizeMedium: '16px',
     radioSizeMedium: '16px',
     dotColorDisabled: '#5B5B5B',
+    boxShadow: 'inset 0 0 0 1px #ADADAD',
     boxShadowDisabled: 'inset 0 0 0 1px #5B5B5B',
     textColor: '#FFFFFF',
     buttonTextColorActive: '#333'
   },
+  Select: {
+    peers: {
+      InternalSelectMenu: {
+        paddingMedium: '4px 0'
+      }
+    }
+  },
   Slider: {
     railColor: '#5B5B5B',
     fillColor: colors.primaryColor,
-    fillColorHover: colors.primaryColorHover,
     railColorHover: '#5B5B5B',
+    fillColorHover: '#4FB233',
     handleBoxShadow: vars.NORMAL_BOX_SHADOW_DARK_THEME,
     handleBoxShadowHover: vars.NORMAL_BOX_SHADOW_DARK_THEME,
     handleBoxShadowActive: vars.NORMAL_BOX_SHADOW_DARK_THEME,
@@ -610,8 +651,8 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     headerBarColor: '#ADADAD'
   },
   Upload: {
-    itemColorHover: 'rgba(255, 255, 255, 0.09)',
-    itemColorHoverError: 'rgba(232, 128, 128, 0.09)',
+    itemColorHover: 'rgba(79, 178, 51, .1)',
+    itemColorHoverError: 'rgba(235, 59, 97, .1)',
     itemIconColor: '#FFFFFF',
     fontSize: '16px'
   }

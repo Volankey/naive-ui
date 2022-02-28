@@ -2,7 +2,10 @@ import { changeColor } from 'seemly'
 import { c, cB, cE, cM, cNotM } from 'naive-ui'
 
 export function mountSvgDefs (): void {
-  if (document.getElementById('naive-ui/tusimple/svg-defs')) return
+  const oldSvgEl = document.getElementById('naive-ui/tusimple/svg-defs')
+  if (oldSvgEl) {
+    document.body.removeChild(oldSvgEl)
+  }
   const svgDefs = `<defs>
     <linearGradient id="progress-info">
       <stop offset="0%" stop-color="#335fff" />
@@ -71,9 +74,18 @@ export const unconfigurableStyle = c([
       )
     ])
   ]),
-  cB('cascader-menu', {
-    padding: '4px 0'
-  }),
+  cB(
+    'cascader-menu',
+    {
+      padding: '4px 0'
+    },
+    [
+      cB('cascader-submenu', {
+        padding: '4px 0',
+        margin: '-4px 0'
+      })
+    ]
+  ),
   cB('dropdown-menu', {
     overflow: 'hidden'
   }),
@@ -284,7 +296,7 @@ export const unconfigurableStyle = c([
       cB('transfer-list-header', [
         cB('transfer-list-header__checkbox', {
           paddingLeft: '12px',
-          paddingRight: '13px'
+          paddingRight: '8px'
         }),
         cB('transfer-list-header__extra', {
           marginRight: '12px'
@@ -296,7 +308,7 @@ export const unconfigurableStyle = c([
             cB('transfer-list-item', [
               cB('transfer-list-item__checkbox', {
                 paddingLeft: '12px',
-                paddingRight: '13px'
+                paddingRight: '8px'
               })
             ])
           ])
