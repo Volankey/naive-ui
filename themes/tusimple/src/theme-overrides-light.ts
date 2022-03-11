@@ -176,7 +176,7 @@ export const themeOverridesLight: GlobalThemeOverrides = {
     thIconColor: '#ccc',
     thTextColor: commonLight.textColor2,
     thFontWeight: commonLight.fontWeight,
-    tdColorHover: 'rgba(79, 178, 51, .1)',
+    tdColorHover: 'rgb(237, 247, 234)',
     thButtonColorHover: '#0000',
     thColorModal: '#EBEDF0',
     tdColorHoverModal: composite(

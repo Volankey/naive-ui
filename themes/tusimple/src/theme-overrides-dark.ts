@@ -230,7 +230,7 @@ export const themeOverridesDark: GlobalThemeOverrides = {
     tdColor: '#1E1E1E',
     tdTextColor: '#FFFFFF',
     thFontWeight: commonDark.fontWeight,
-    tdColorHover: '#222C1F',
+    tdColorHover: '#253421',
     thButtonColorHover: '#0000',
     thColorModal: '#282828',
     tdColorModal: '#1E1E1E',
